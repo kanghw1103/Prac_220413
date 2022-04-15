@@ -12,5 +12,9 @@ func main() {
 			"message": "pong again",
 		})
 	})
-	r.Run()
+
+	err := r.Run()
+	if err != nil {
+		return
+	}
 }
